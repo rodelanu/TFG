@@ -10,7 +10,6 @@
     Al considerar esta nueva función, resultado de perturbar exactamente la mitad de asignaciones de f, se tiene que P(f') = 1 para cualquier f escogida.
     
 - Bernstein-Vazirani (BV). Dada una función f_s = s*x (mod 2), el programa P nos devolverá el valor de la cadena de bits s.
-  * De forma general, dada una función g: {0,1}^m x {0,1}^n -> {0,1}^p, siempre se verificará que P(f_g(s,t)) = g(P(f_s),P(f_t)).
-    1. Si t es la cadena resultante de aplicar X (0 -> 1, 1 -> 0) bit a bit en s, entonces P(f_(s+t)) = |1...1⟩.
-    2. P(f_(s+t)) = P(f_s) + P(f_t).
-    3. P(f_(s*t)) = P(f_s) * P(f_t).
+  * Si t es la cadena resultante de aplicar X (0 -> 1, 1 -> 0) bit a bit en s, entonces P(f_(s+t)) = |1...1⟩.
+  * P(f_(s+t)) = P(f_s) + P(f_t).
+  * P(f_(s*t)) = P(f_s) * P(f_t).
