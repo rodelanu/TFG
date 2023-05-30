@@ -36,7 +36,10 @@ Esta comprobación se realizará manualmente o con ayuda de puertas añadidas tr
 ## Algoritmo de Deutsch-Jozsa 
 
 [1. Deutsch Jozsa Rules](1_Deutsch_Jozsa_Rules.ipynb)
-- Deutsch-Josza (DJ). El programa P toma un oráculo para una función f: {0,1}<sup>n</sup> -> {0,1} que es constante (P -> 1) o bien es equilibrada (P -> 0).
+
+Sea P el algoritmo de Deutsch-Josza (DJ). P toma un oráculo para una función f: {0,1}<sup>n</sup> -> {0,1} que es constante (P -> 1) o bien es equilibrada (P -> 0) y nos determinar el tipo de función que es.
+
+Reglas metamórficas:
   * Sean g un automorfismo de {0,1}<sup>n</sup> y f una función como la del enunciado, se cumple que P(f) = P(f(g)).
   * Dada f: {0,1}<sup>n</sup> -> {0,1} una función constante o equilibrada, siempre se verifica que P(f) = P(1 - f).
   * Sean f una función f como la del enunciado y f' otra función que resulta de mantener fijos la mitad de 0's e intercambiar la otra mitad de 0's por 1's.
@@ -48,9 +51,13 @@ Esta comprobación se realizará manualmente o con ayuda de puertas añadidas tr
 ## Algoritmo de Bernstein-Vazirani
 
 [2. Bernstein Vazirani Rules](2_Bernstein_Vazirani_Rules.ipynb)
-- Bernstein-Vazirani (BV). Dada una función f<sub>s</sub> = s*x (mod 2), el programa P nos devolverá el valor de la cadena de bits s.
-  * Si t es la cadena resultante de aplicar X (0 -> 1, 1 -> 0) bit a bit en s, entonces P(f<sub>s+t</sub>) = |1...1⟩.
+
+Sea P el algortimo de Bernstein-Vazirani (BV). Dada una función f<sub>s</sub> = s*x (mod 2), P nos devolverá el valor de la cadena de bits s.
+
+Reglas metamórficas:
   * P(f<sub>s+t</sub>) = P(f<sub>s</sub>) + P(f<sub>t</sub>).
+  * Si t es la cadena resultante de aplicar X (0 -> 1, 1 -> 0) bit a bit en s, entonces P(f<sub>s+t</sub>) = |1...1⟩. Este es un caso particular de la regla anterior, que aunque es más débil, cualquier contraejemplo de esta regla sirve para la primera.
+  * Si aplicamos al algoritmo ambas funciones sucesivamente en estado de superposición, f<sub>s</sub> y f<sub>s1</sub>, se obtiene como resultado s +<sub>b</sub> s1. 
   * P(f<sub>s*t</sub>) = P(f<sub>s</sub>) * P(f<sub>t</sub>).
 
 <br>
