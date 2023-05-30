@@ -3,23 +3,30 @@
 
 # Trabajo de Fin de Grado - Computación Cuántica
 
+Realizado por:
+- Rodrigo de la Nuez Moraleda
+- Sinhué García Gil
 <br>
 
 # Implementación de reglas metamórficas para comprobar la corrección de algoritmos cuánticos
 
-Realizado por:
-- Rodrigo de la Nuez Moraleda
-- Sinhué García Gil
+Sea f una función objetivo o algoritmo. Se considera que R es una regla metamórfica si es una relación entre una secuencia de entrada y su salida que se puede deducir de forma lógica desde el algoritmo, es decir, es una propiedad necesaria de f.
 
-< explicación del concepto de reglas metamórficas >
+Desde esta definición de relación (regla) metamórfica, podemos definir lo que se considera como testing metamórfico.
 
-- Suma Modular.
-  * R0: x (+m) 0 = x
-  * RS: x (+m) s(y) = s(x (+m) y), donde s es el sucesor modular.
+Dada f un algoritmo, P la implementación de f y R una regla metamórfica para una secuencia <x_1, x_2, ..., x_n>. Para realizar testing metamórfico sobre P, seguiremos los siguiente pasos:
+  * Creamos R', sustituyendo la f por su implementación P.
+  * Seguimos construyendo R' con la secuencia de test que hemos elegido <x_n+1,...,x_k> --> <P(x_n+1), ..., P(x_k)>
+  * Comprobamos los resultados, si alguno no se cumpliera, R' no se satisface y por lo tanto consideraríamos que P no es correcto.
+
+Ejemplo de reglas metamórficas:
+> Suma Modular:
+>  * R0: x (+m) 0 = x
+>  * RS: x (+m) s(y) = s(x (+m) y), donde s es el sucesor modular.
 
 <br>
 
-# Algoritmo de Deutsch-Jozsa 
+## Algoritmo de Deutsch-Jozsa 
 
 `Deutsch_Jozsa_Rules.ipynb`
 - Deutsch-Josza (DJ). El programa P toma un oráculo para una función f: {0,1}^n -> {0,1} que es constante (P -> 1) o bien es equilibrada (P -> 0).
@@ -31,7 +38,7 @@ Realizado por:
 
 <br>
 
-# Algoritmo de Bernstein-Vazirani
+## Algoritmo de Bernstein-Vazirani
 
 `Bernstein_Vazirani_Rules.ipynb`
 - Bernstein-Vazirani (BV). Dada una función f_s = s*x (mod 2), el programa P nos devolverá el valor de la cadena de bits s.
@@ -41,7 +48,7 @@ Realizado por:
 
 <br>
 
-# Algoritmo de Simon
+## Algoritmo de Simon
 
 `Simon_Rules.ipynb`
 - Al efectuar la suma bit a bit sobre el estado cuántico que comprende todos los
