@@ -37,9 +37,10 @@ Esta comprobación se realizará manualmente o con ayuda de puertas añadidas tr
 
 [1. Deutsch Jozsa Rules](1_Deutsch_Jozsa_Rules.ipynb)
 
-Sea P el algoritmo de Deutsch-Josza (DJ). P toma un oráculo para una función f: {0,1}<sup>n</sup> -> {0,1} que es constante (P -> 1) o bien es equilibrada (P -> 0) y nos determinar el tipo de función que es.
+El algoritmo de Deutsch-Jozsa busca clasificar una función desconocida f: {0,1}<sup>n</sup> -> {0,1} según si es constante o equilibrada, cuando para la mitad de valores de entrada f devuelva 0 y 1 para la otra mitad. Este algoritmo devolverá 0...0 si y sólo si f es constante.
 
-Reglas metamórficas:
+Si P es el programa que implementa el algoritmo de Deutsch-Josza (DJ), de forma que si f es constante (P -> 0) y si es equilibrada (P -> 1), entonces se tienen las siguientes reglas metamórficas:
+
   * Sean g un automorfismo de {0,1}<sup>n</sup> y f una función como la del enunciado, se cumple que P(f) = P(f(g)).
   * Dada f: {0,1}<sup>n</sup> -> {0,1} una función constante o equilibrada, siempre se verifica que P(f) = P(1 - f).
   * Sean f una función f como la del enunciado y f' otra función que resulta de mantener fijos la mitad de 0's e intercambiar la otra mitad de 0's por 1's.
