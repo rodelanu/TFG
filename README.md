@@ -57,7 +57,7 @@ Sea P el algortimo de Bernstein-Vazirani (BV). Dada una función f<sub>s</sub> =
 Reglas metamórficas:
   * P(f<sub>s+t</sub>) = P(f<sub>s</sub>) + P(f<sub>t</sub>).
   * Si t es la cadena resultante de aplicar X (0 -> 1, 1 -> 0) bit a bit en s, entonces P(f<sub>s+t</sub>) = |1...1⟩. Este es un caso particular de la regla anterior, que aunque es más débil, cualquier contraejemplo de esta regla sirve para la primera.
-  * Si aplicamos al algoritmo ambas funciones sucesivamente en estado de superposición, f<sub>s</sub> y f<sub>s1</sub>, se obtiene como resultado s +<sub>b</sub> s1. 
+  * Si aplicamos al algoritmo ambas funciones, f<sub>s</sub> y f<sub>s1</sub>, sucesivamente en estado de superposición, se obtiene como resultado s +<sub>b</sub> s1. 
   * P(f<sub>s*t</sub>) = P(f<sub>s</sub>) * P(f<sub>t</sub>).
 
 <br>
