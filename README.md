@@ -1,4 +1,9 @@
+
+<br>
+
 # Trabajo de Fin de Grado - Computación Cuántica
+
+<br>
 
 # Implementación de reglas metamórficas para distintos algoritmos cuánticos
 
