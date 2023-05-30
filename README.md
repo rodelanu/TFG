@@ -68,7 +68,7 @@ Reglas metamórficas:
 
 El algoritmo de Simon busca encontrar una cadena *b* que caracteriza una función f: {0,1}<sup>n</sup> -> {0,1} que es inyectiva o *dos a uno*, si para cada valor *y* del dominio imagen hay dos valores de entrada que evalúan a *y*, que siempre serán de la forma *x* y *x + b* (mod 2<sup>n</sup>), al considerar que ambas cadenas de bits se corresponden con valores de Z<sub>2<sup>n</sup></sub>.
 
-Este algoritmo encontrará las posibles cadenas *z* tales que *b***z* (mod 2), con las que se podrá hallar el valor de *b* mediante métodos de resolución de sistemas de ecuaciones lineales. Dada una implementación correcta de este algoritmo se tendrán las siguientes reglas metamórficas:
+Este algoritmo encontrará las posibles cadenas *z* tales que *b***z* = 0 (mod 2), con las que se podrá hallar el valor de *b* mediante métodos de resolución de sistemas de ecuaciones lineales. Dada una implementación correcta de este algoritmo se tendrán las siguientes reglas metamórficas:
 
   * Al efectuar la suma bit a bit sobre el estado cuántico que comprende todos los posibles resultados *z* del programa, se obtiene de nuevo el conjunto inicial de soluciones.
   * Aplicar la implementación del algoritmo con cierta cadena de bits *b* e invertir las soluciones obtenidas, tiene el mismo efecto que aplicar el programa asociado a la cadena *b* invertida.
