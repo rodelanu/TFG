@@ -39,7 +39,7 @@ Esta comprobación se realizará manualmente o con ayuda de puertas añadidas tr
 
 El algoritmo de Deutsch-Jozsa busca clasificar una función desconocida f: {0,1}<sup>n</sup> -> {0,1} según si es constante o equilibrada, cuando para la mitad de valores de entrada f devuelva 0 y 1 para la otra mitad. 
 
-Este algoritmo devolverá 0...0 si y sólo si f es constante.
+Este algoritmo devolverá la cadena de bits nula 0...0 si y sólo si f es constante.
 
 Si P es el programa que implementa el algoritmo de Deutsch-Josza (DJ), de forma que si f es constante (P -> 0) y si es equilibrada (P -> 1), entonces se tienen las siguientes reglas metamórficas:
 
