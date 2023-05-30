@@ -5,7 +5,7 @@
 
 <br>
 
-# Implementación de reglas metamórficas para distintos algoritmos cuánticos
+# Implementación de reglas metamórficas para comprobar la corrección de algoritmos cuánticos
 
 Realizado por:
 - Rodrigo de la Nuez Moraleda
