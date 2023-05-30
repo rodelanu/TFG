@@ -3,7 +3,7 @@
 
 # Trabajo de Fin de Grado - Computación Cuántica
 
-Realizado por:
+Repositorio común realizado por:
 - Rodrigo de la Nuez Moraleda
 - Sinhué García Gil
 <br>
