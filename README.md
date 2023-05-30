@@ -43,7 +43,7 @@ Este algoritmo devolverá la cadena de bits nula 0...0 si y sólo si f es consta
 
 Si P es el programa que implementa el algoritmo de Deutsch-Josza (DJ), de forma que si f es constante (P -> 0) y si es equilibrada (P -> 1), entonces se tienen las siguientes reglas metamórficas:
 
-  * Sean g un automorfismo de {0,1}<sup>n</sup> y f una función como la del enunciado, se cumple que P(f) = P(f(g)).
+  * Sean g un automorfismo de {0,1}<sup>n</sup> y f una función como la del enunciado, se cumple que P(f) = P(f o g).
   * Dada f: {0,1}<sup>n</sup> -> {0,1} una función constante o equilibrada, siempre se verifica que P(f) = P(1 - f).
   * Sean f una función f como la del enunciado y f' otra función que resulta de mantener fijos la mitad de 0's e intercambiar la otra mitad de 0's por 1's.
     De forma análoga, f' no afecta a la mitad de valores x para los que f(x) = 1 y para el resto de esos valores se tiene f'(x) = 0.
