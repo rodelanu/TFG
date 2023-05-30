@@ -37,7 +37,7 @@ Esta comprobación se realizará manualmente o con ayuda de puertas añadidas tr
 
 [1. Deutsch Jozsa Rules](1_Deutsch_Jozsa_Rules.ipynb)
 
-El algoritmo de Deutsch-Jozsa busca clasificar una función desconocida *f* : {0,1}<sup>n</sup> -> {0,1} según si es constante o equilibrada (cuando para la mitad de valores de entrada *f* devuelva 0 y 1 para la otra mitad=. 
+El algoritmo de Deutsch-Jozsa busca clasificar una función desconocida *f* : {0,1}<sup>n</sup> -> {0,1} según si es constante o equilibrada (cuando para la mitad de valores de entrada *f* devuelva 0 y 1 para la otra mitad). 
 
 Este algoritmo devolverá la cadena de bits nula 0...0 si y sólo si *f* es constante.
 
