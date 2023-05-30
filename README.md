@@ -16,7 +16,7 @@ Desde esta definición de relación (regla) metamórfica, podemos definir lo que
 
 Dada f un algoritmo, P la implementación de f y R una regla metamórfica para una secuencia <x_1, x_2, ..., x_n>. Para realizar testing metamórfico sobre P, seguiremos los siguiente pasos:
   * Creamos R', sustituyendo la f por su implementación P.
-  * Seguimos construyendo R' con la secuencia de test que hemos elegido <x_n+1,...,x_k> --> <P(x_n+1), ..., P(x_k)>
+  * Seguimos construyendo R' con la secuencia de test que hemos elegido <x_n+1,...,x_k> <P(x_n+1), ..., P(x_k)>
   * Comprobamos los resultados, si alguno no se cumpliera, R' no se satisface y por lo tanto consideraríamos que P no es correcto.
 
 Ejemplo de reglas metamórficas:
