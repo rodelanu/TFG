@@ -66,7 +66,7 @@ Reglas metamórficas:
 
 [3. Simon Rules](3_Simon_Rules.ipynb)
 
-El algoritmo de Simon busca encontrar una cadena *b* que caracteriza una función f: {0,1}<sup>n</sup> -> {0,1} que es inyectiva o *dos a uno*, si para cada valor *y* del dominio imagen hay dos valores de entrada que evalúan a *y*, que siempre serán de la forma *x* y $ x \oplus b $.
+El algoritmo de Simon busca encontrar una cadena *b* que caracteriza una función f: {0,1}<sup>n</sup> -> {0,1} que es inyectiva o *dos a uno*, si para cada valor *y* del dominio imagen hay dos valores de entrada que evalúan a *y*, que siempre serán de la forma *x* y *x + b* (mod 2^n), al considerar que ambas cadenas de bits se corresponden con valores de Z_{2^n}.
 
 Este algoritmo encontrará las posibles cadenas *z* tales que *b*z* (mod 2), con las que se podrá hallar el valor de *b* mediante métodos de resolución de sistemas de ecuaciones lineales. Dada una implementación correcta de este algoritmo se tendrán las siguientes reglas metamórficas:
 
