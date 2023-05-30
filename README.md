@@ -35,7 +35,7 @@ Esta comprobación se realizará manualmente o con ayuda de puertas añadidas tr
 
 ## Algoritmo de Deutsch-Jozsa 
 
-[Deutsch_Jozsa_Rules.ipynb](rodelanu/TFG/Deutsch_Jozsa_Rules.ipynb)
+[Deutsch_Jozsa_Rules.ipynb](1_Deutsch_Jozsa_Rules.ipynb)
 - Deutsch-Josza (DJ). El programa P toma un oráculo para una función f: {0,1}^n -> {0,1} que es constante (P -> 1) o bien es equilibrada (P -> 0).
   * Sean g un automorfismo de {0,1}^n y f una función como la del enunciado, se cumple que P(f) = P(f(g)).
   * Dada f: {0,1}^n -> {0,1} una función constante o equilibrada, siempre se verifica que P(f) = P(1 - f).
@@ -47,7 +47,7 @@ Esta comprobación se realizará manualmente o con ayuda de puertas añadidas tr
 
 ## Algoritmo de Bernstein-Vazirani
 
-[Bernstein_Vazirani_Rules.ipynb](/rodelanu/TFG/Bernstein_Vazirani_Rules.ipynb)
+[Bernstein_Vazirani_Rules.ipynb](2_Bernstein_Vazirani_Rules.ipynb)
 - Bernstein-Vazirani (BV). Dada una función f_s = s*x (mod 2), el programa P nos devolverá el valor de la cadena de bits s.
   * Si t es la cadena resultante de aplicar X (0 -> 1, 1 -> 0) bit a bit en s, entonces P(f_(s+t)) = |1...1⟩.
   * P(f_(s+t)) = P(f_s) + P(f_t).
@@ -57,7 +57,7 @@ Esta comprobación se realizará manualmente o con ayuda de puertas añadidas tr
 
 ## Algoritmo de Simon
 
-[Simon_Rules.ipynb](3.%20Simon_Rules.ipynb)
+[Simon_Rules.ipynb](3_Simon_Rules.ipynb)
 - Al efectuar la suma bit a bit sobre el estado cuántico que comprende todos los
 posibles resultados del programa P, se obtiene de nuevo el conjunto inicial de soluciones S.
 - Aplicar la implementación del algoritmo con cierta cadena de bits b e invertir las
