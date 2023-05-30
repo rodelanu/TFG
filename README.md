@@ -35,7 +35,7 @@ Esta comprobación se realizará manualmente o con ayuda de puertas añadidas tr
 
 ## Algoritmo de Deutsch-Jozsa 
 
-[1. Deutsch Jozsa Rules](1_Deutsch_Jozsa_Rules.ipynb)
+[1. Deutsch-Jozsa Rules](1_Deutsch_Jozsa_Rules.ipynb)
 
 El algoritmo de Deutsch-Jozsa busca clasificar una función desconocida *f* : {0,1}<sup>n</sup> &rarr; {0,1} según si es constante o equilibrada (cuando para la mitad de valores de entrada *f* devuelva 0 y 1 para la otra mitad). 
 
@@ -50,7 +50,7 @@ Si *P* es el programa que implementa el algoritmo de Deutsch-Josza, de forma que
 
 ## Algoritmo de Bernstein-Vazirani
 
-[2. Bernstein Vazirani Rules](2_Bernstein_Vazirani_Rules.ipynb)
+[2. Bernstein-Vazirani Rules](2_Bernstein_Vazirani_Rules.ipynb)
 
 Sea *P* el algortimo de Bernstein-Vazirani (BV). Dada una función f<sub>s</sub> = s*x (mod 2), P nos devolverá el valor de la cadena de bits s.
 
