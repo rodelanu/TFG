@@ -41,10 +41,10 @@ El algoritmo de Deutsch-Jozsa busca clasificar una función desconocida *f* : {0
 
 Este algoritmo devolverá la cadena de bits nula 0...0 si y sólo si *f* es constante.
 
-Si *P* es el programa que implementa el algoritmo de Deutsch-Josza, de forma que si *f* es constante (*P* -> 0) y si es equilibrada (*P* -> 1), entonces se tienen las siguientes reglas metamórficas:
+Si *P* es el programa que implementa el algoritmo de Deutsch-Josza, de forma que si *f* es constante (*P* &rarr; 0) y si es equilibrada (*P* &rarr; 1), entonces se tienen las siguientes reglas metamórficas:
 
   * Sean *g* un automorfismo de {0,1}<sup>n</sup> y *f* una función como la del enunciado, se cumple que *P(f) = P(f o g)*.
-  * Dada *f* : {0,1}<sup>n</sup> -> {0,1} una función constante o equilibrada, siempre se verifica que *P(f) = P(1 - f)*.
+  * Dada *f* : {0,1}<sup>n</sup> &rarr; {0,1} una función constante o equilibrada, siempre se verifica que *P(f) = P(1 - f)*.
 
 <br>
 
@@ -52,7 +52,7 @@ Si *P* es el programa que implementa el algoritmo de Deutsch-Josza, de forma que
 
 [2. Bernstein Vazirani Rules](2_Bernstein_Vazirani_Rules.ipynb)
 
-Sea P el algortimo de Bernstein-Vazirani (BV). Dada una función f<sub>s</sub> = s*x (mod 2), P nos devolverá el valor de la cadena de bits s.
+Sea *P* el algortimo de Bernstein-Vazirani (BV). Dada una función f<sub>s</sub> = s*x (mod 2), P nos devolverá el valor de la cadena de bits s.
 
 Reglas metamórficas:
   * P(f<sub>s+t</sub>) = P(f<sub>s</sub>) + P(f<sub>t</sub>).
@@ -66,7 +66,7 @@ Reglas metamórficas:
 
 [3. Simon Rules](3_Simon_Rules.ipynb)
 
-El algoritmo de Simon busca encontrar una cadena *b* que caracteriza una función f: {0,1}<sup>n</sup> -> {0,1} que es inyectiva o *dos a uno*, si para cada valor *y* del dominio imagen hay dos valores de entrada que evalúan a *y*, que siempre serán de la forma *x* y *x + b* (mod 2<sup>n</sup>), al considerar que ambas cadenas de bits se corresponden con valores de Z<sub>2<sup>n</sup></sub>.
+El algoritmo de Simon busca encontrar una cadena *b* que caracteriza una función f: {0,1}<sup>n</sup> &rarr; {0,1} que es inyectiva o *dos a uno*, si para cada valor *y* del dominio imagen hay dos valores de entrada que evalúan a *y*, que siempre serán de la forma *x* y *x + b* (mod 2<sup>n</sup>), al considerar que ambas cadenas de bits se corresponden con valores de Z<sub>2<sup>n</sup></sub>.
 
 Este algoritmo encontrará las posibles cadenas *z* tales que *b***z* = 0 (mod 2), con las que se podrá hallar el valor de *b* mediante métodos de resolución de sistemas de ecuaciones lineales. 
 
