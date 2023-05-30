@@ -65,7 +65,10 @@ Reglas metamórficas:
 ## Algoritmo de Simon
 
 [3. Simon Rules](3_Simon_Rules.ipynb)
-- Al efectuar la suma bit a bit sobre el estado cuántico que comprende todos los
-posibles resultados del programa P, se obtiene de nuevo el conjunto inicial de soluciones S.
-- Aplicar la implementación del algoritmo con cierta cadena de bits b e invertir las
-cadenas de bits resultantes, equivale a aplicar el programa asociado a la cadena b invertida.
+
+El algoritmo de Simon busca encontrar una cadena *b* que caracteriza una función f: {0,1}<sup>n</sup> -> {0,1} que es inyectiva o *dos a uno*, si para cada valor *y* del dominio imagen hay dos valores de entrada que evalúan a *y*, que siempre serán de la forma *x* y $ x \oplus b $.
+
+Este algoritmo encontrará las posibles cadenas *z* tales que *b*z* (mod 2), con las que se podrá hallar el valor de *b* mediante métodos de resolución de sistemas de ecuaciones lineales. Dada una implementación correcta de este algoritmo se tendrán las siguientes reglas metamórficas:
+
+  * Al efectuar la suma bit a bit sobre el estado cuántico que comprende todos los posibles resultados *z* del programa, se obtiene de nuevo el conjunto inicial de soluciones.
+  * Aplicar la implementación del algoritmo con cierta cadena de bits *b* e invertir las soluciones obtenidas, tiene el mismo efecto que aplicar el programa asociado a la cadena *b* invertida.
