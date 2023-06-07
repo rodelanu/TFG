@@ -18,9 +18,8 @@ Repositorio común realizado por:
   * Si *R'* no se satisface con los valores obtenidos, se concluye que *P* no es una implementación válida de *f*.
 
 A continuación, se presentan varias reglas metamórficas para la suma módulo *m*, con *m* cierto entero positivo.
-> Suma Modular:
->  * R0: x (+m) 0 = x
->  * RS: x (+m) s(y) = s(x (+m) y), donde s es el sucesor modular.
+>  * R0: x (+<sub>m</sub>) 0 = x
+>  * RS: x <sub>m</sub> s(y) = s(x <sub>m</sub> y), donde *s* denota el sucesor modular.
 
 Para la implementación de las reglas que hemos obtenido, seguiremos el mismo esquema:
   * Implementaremos el algoritmo P
