@@ -17,7 +17,7 @@ Repositorio común realizado por:
   * Consideramos una secuencia de test a elección <x<sub>n+1</sub>, ... , x<sub>k</sub>> &rarr; <P(x<sub>n+1</sub>), ... , P(x<sub>k</sub>)>
   * Si *R'* no se satisface con los valores obtenidos, se concluye que *P* no es una implementación válida de *f*.
 
-A continuación, presentamos un ejemplo de reglas metamórficas asocidas al proceso de suma módulo *m* donde *m* es cierto entero positivo.
+A continuación, se presentan varias reglas metamórficas para la suma módulo *m*, con *m* cierto entero positivo.
 > Suma Modular:
 >  * R0: x (+m) 0 = x
 >  * RS: x (+m) s(y) = s(x (+m) y), donde s es el sucesor modular.
