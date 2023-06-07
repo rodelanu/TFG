@@ -24,7 +24,7 @@ A continuación, se presentan varias reglas metamórficas para la suma módulo *
 Para la implementación de las reglas que hemos obtenido, seguiremos el mismo esquema:
   * Se realiza una implementación *P* del algoritmo cuántico correspondiente.
   * Consideramos ciertos valores de prueba y ejecutamos el circuito creado para la implementación de *P*.
-  * Comprobaremos que las reglas metamórficas definidas se comprueban para los valores de entrada seleccionados.
+  * Comprobamos que la regla metamórfica definida se verifica para los valores de entrada seleccionados.
 
 """
 Esta comprobación se realizará manualmente o con ayuda de puertas añadidas tras el algoritmo. Si bien es cierto, que debido a intentar usar el menor número de qubits posibles para se probados en ordenadores cuánticos reales, la comprobación de los ejemplos propuestos a continuación se hará de forma manual (visual)? (Obs: Ya que realmente comprobamos nosotros que da lo debe dar, no sé si habría otra forma mejor de ponerlo, lo dejo así por ahora).
