@@ -14,7 +14,7 @@ Repositorio común realizado por:
 
 **Definición.** Sea *f* la función que se desea computar, *P* la implementación de *f* y *R* una regla metamórfica para una secuencia <x<sub>1</sub>, x<sub>2</sub>, ..., x<sub>n</sub>>. Para realizar pruebas de ***testing metamórfico*** sobre *P*, se procederá como sigue:
   * Partiendo de la regla *R* se crea *R'*, sustituyendo en *R* la función *f* por su implementación *P*.
-  * Consideramos una secuencia de test a elección <x<sub>n+1</sub>,...,x<sub>k</sub>> &rarr; <P(x<sub>n+1</sub>), ..., P(x<sub>k</sub>)>
+  * Consideramos una secuencia de test a elección <x<sub>n+1</sub>, ... , x<sub>k</sub>> &rarr; <P(x<sub>n+1</sub>), ... , P(x<sub>k</sub>)>
   * Comprobamos los resultados, si alguno no se cumpliera, *R'* no se satisface y por lo tanto consideraríamos que *P* no es correcto.
 
 Ejemplo de reglas metamórficas:
