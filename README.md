@@ -10,14 +10,14 @@ Repositorio común realizado por:
 
 # Implementación de reglas metamórficas para comprobar la corrección de algoritmos cuánticos
 
-**Def:** Sea f una función objetivo o algoritmo. Se considera que R es una ***regla metamórfica*** si es una relación entre una secuencia de entrada y su salida, que se puede deducir de forma lógica desde el algoritmo. Es decir, es una propiedad necesaria de f.
+**Definición.** Sea *f* una función objetivo o algoritmo, diremos que *R* es una ***regla metamórfica*** si es una relación entre una o varias secuencias de entrada y/o salida, y que se puede deducir de forma lógica a paritr del procedimiento el algoritmo. Esto quiere decir que *R* siempre será una propiedad necesaria de la función *f*.
 
-Desde esta definición de relación (regla) metamórfica, podemos definir lo que se considera como testing metamórfico.
+Partiendo de esta definición de relación o regla metamórfica, podemos introducir el procedimiento que se sigue en el testing metamórfico.
 
-**Def:** Dada f un algoritmo, P la implementación de f y R una regla metamórfica para una secuencia <x<sub>1</sub>, x<sub>2</sub>, ..., x<sub>n</sub>>. Para realizar ***testing metamórfico*** sobre P, seguiremos los siguiente pasos:
-  * Creamos R', sustituyendo la f por su implementación P.
-  * Seguimos construyendo R' con la secuencia de test que hemos elegido <x<sub>n+1</sub>,...,x<sub>k</sub>> -> <P(x<sub>n+1</sub>), ..., P(x<sub>k</sub>)>
-  * Comprobamos los resultados, si alguno no se cumpliera, R' no se satisface y por lo tanto consideraríamos que P no es correcto.
+**Definición.** Sea *f* la función que se desea computar, *P* la implementación de *f* y *R* una regla metamórfica para una secuencia <x<sub>1</sub>, x<sub>2</sub>, ..., x<sub>n</sub>>. Para realizar pruebas de ***testing metamórfico***, sobre el programa *P*, seguiremos los siguiente pasos:
+  * Creamos *R'*, sustituyendo la función *f* por su implementación *P*.
+  * Seguimos construyendo *R'* con la secuencia de test que hemos elegido <x<sub>n+1</sub>,...,x<sub>k</sub>> -> <P(x<sub>n+1</sub>), ..., P(x<sub>k</sub>)>
+  * Comprobamos los resultados, si alguno no se cumpliera, *R'* no se satisface y por lo tanto consideraríamos que *P* no es correcto.
 
 Ejemplo de reglas metamórficas:
 > Suma Modular:
