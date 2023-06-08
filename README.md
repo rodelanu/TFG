@@ -36,7 +36,7 @@ Esta comprobación se realizará manualmente o con ayuda de puertas añadidas tr
 
 [1. Deutsch-Jozsa Rules](1_Deutsch_Jozsa_Rules.ipynb)
 
-El algoritmo de Deutsch-Jozsa busca clasificar una función desconocida *f* : {0,1}<sup>n</sup> &rarr; {0,1} según si es constante o equilibrada (cuando para la mitad de valores de entrada *f* devuelva 0 y 1 para la otra mitad). 
+El algoritmo de Deutsch-Jozsa busca clasificar una función oráculo *f* : {0,1}<sup>n</sup> &rarr; {0,1} según si es constante o equilibrada (cuando para la mitad de valores de entrada *f* devuelva 0 y 1 para la otra mitad). 
 
 Este algoritmo devolverá la cadena de bits nula 0...0 si y sólo si *f* es constante.
 
@@ -51,13 +51,11 @@ Si *P* es el programa que implementa el algoritmo de Deutsch-Josza, de forma que
 
 [2. Bernstein-Vazirani Rules](2_Bernstein_Vazirani_Rules.ipynb)
 
-Sea *P* el algortimo de Bernstein-Vazirani (BV). Dada una función f<sub>s</sub> = s*x (mod 2), P nos devolverá el valor de la cadena de bits s.
+El algoritmo de Bernstein-Vazirani busca la obtención de una cadena de bits *s* que caracteriza una función oráculo *f<sub>*s*</sub>* = *s* * *x* (mod 2). Sea *P* el programa que implementa este algoritmo y devuelve *s*, si usamos +<sub>*b*</sub> para denotar la suma bit a bit de dos cadenas, se tienen las siguientes reglas metamórficas:
 
-Reglas metamórficas que una implementación correcta del algoritmo de BV debería cumplir:
-  * P(f<sub>s+t</sub>) = P(f<sub>s</sub>) + P(f<sub>t</sub>).
-  * Si t es la cadena resultante de aplicar X (0 -> 1, 1 -> 0) bit a bit en s, entonces P(f<sub>s+t</sub>) = |1...1⟩. Este es un caso particular de la regla anterior, que aunque es más débil, cualquier contraejemplo de esta regla sirve para la primera.
-  * Si aplicamos al algoritmo ambas funciones, f<sub>s</sub> y f<sub>s1</sub>, sucesivamente en estado de superposición, se obtiene como resultado s +<sub>b</sub> s1. 
-  * P(f<sub>s*t</sub>) = P(f<sub>s</sub>) * P(f<sub>t</sub>).
+  * *P*(*f*<sub>*s+<sub>*b*</sub>t*</sub>) = *P*(*f*<sub>*s*</sub>) +<sub>*b*</sub> *P*(*f*<sub>*t*</sub>).
+  * Si *t* es la cadena resultante de aplicar *X* (0 -> 1, 1 -> 0) bit a bit en *s*, entonces *P*(*f*<sub>*s+<sub>*b*</sub>t*</sub>) = |1...1⟩. Este es un caso particular de la regla anterior y, aunque es más débil, cualquier contraejemplo de esta regla servirá para desmentir la primera.
+  * Si aplicamos al algoritmo ambas funciones, *f*<sub>*s*</sub> y *f*<sub>*s'*</sub>, sucesivamente en estado de superposición, se obtiene como resultado *s* +<sub>*b*</sub> *s'*. 
 
 <br>
 
