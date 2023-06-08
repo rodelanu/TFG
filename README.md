@@ -13,6 +13,8 @@ Repositorio común realizado por:
 
 **Definición.** Sea *f* una función objetivo o algoritmo, diremos que *R* es una ***regla metamórfica*** si es una relación entre una o varias secuencias de entrada y/o salida, y que se puede deducir de forma lógica a paritr del procedimiento el algoritmo. Esto quiere decir que *R* siempre será una propiedad necesaria de la función *f*.
 
+<br>
+
 **Definición.** Sea *f* la función que se desea computar, *P* la implementación de *f* y *R* una regla metamórfica para una secuencia (*x*<sub>1</sub>,*x*<sub>2</sub>, ... ,*x*<sub>*n*</sub>). Para realizar pruebas de ***testing metamórfico*** sobre *P*, se procederá como sigue:
   * Partiendo de la regla *R* se crea *R'*, sustituyendo en *R* la función *f* por su implementación *P*.
   * Consideramos una secuencia de test a elección (*x*<sub>1</sub>, ... ,*x*<sub>*n*</sub>) &rarr; (*P*(*x*<sub>1</sub>), ... ,*P*(*x*<sub>*n*</sub>)).
