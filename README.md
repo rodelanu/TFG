@@ -53,7 +53,7 @@ Si *P* es el programa que implementa el algoritmo de Deutsch-Josza, de forma que
 
 El algoritmo de Bernstein-Vazirani busca la obtención de una cadena de bits *s* que caracteriza una función de caja negra *f<sub>*s*</sub>* = *s* * *x* (mod 2). Sea *P* el programa que implementa este algoritmo y devuelve *s*, si usamos +<sub>*b*</sub> para denotar la suma bit a bit de dos cadenas, se tienen las siguientes reglas metamórficas:
 
-  * *P*(*f*<sub>*s+<sub>*b*</sub>t*</sub>) = *P*(*f*<sub>*s*</sub>) +<sub>*b*</sub> *P*(*f*<sub>*t*</sub>).
+  * El programa aplicado a la suma bit a bit de dos cadenas *s* y *t* (de igual longitud) devuelve el mismo resultado que aplicar sendos programas asociados a las cadenas y realizar la suma bit a bit de los resultados obtenidos, *P*(*f*<sub>*s +<sub>*b*</sub> t*</sub>) = *P*(*f*<sub>*s*</sub>) +<sub>*b*</sub> *P*(*f*<sub>*t*</sub>).
   * Si *t* es la cadena resultante de aplicar *X* (0 -> 1, 1 -> 0) bit a bit en *s*, entonces *P*(*f*<sub>*s+<sub>*b*</sub>t*</sub>) = |1...1⟩. Este es un caso particular de la regla anterior y, aunque es más débil, cualquier contraejemplo de esta regla servirá para desmentir la primera.
   * Al aplicar en el algoritmo los oráculos de ambas funciones *f*<sub>*s*</sub> y *f*<sub>*s'*</sub> sucesivamente, se obtiene como resultado la suma bit a bit de las cadenas *s* y *s'* (i.e. *s* +<sub>*b*</sub> *s'*). 
 
