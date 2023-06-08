@@ -22,8 +22,8 @@ A continuación, se presentan varias reglas metamórficas para la suma módulo *
 >  * *R*<sub>0</sub> := *x* +<sub>*m*</sub> 0 = *x*
 >  * *R*<sub>*s*</sub> := *x* +<sub>m</sub> *s*(*y*) = *s*(*x* <sub>*m*</sub> *y*), donde *s* denota el sucesor modular.
 
-Para la implementación de las reglas que hemos obtenido, seguiremos el mismo esquema:
-  * Se realiza una implementación *P* del algoritmo cuántico correspondiente.
+Para la implementación de las reglas que hemos definido, seguiremos el mismo esquema:
+  * Se crea un programa *P* que computa el algoritmo cuántico correspondiente.
   * Consideramos ciertos valores de prueba y ejecutamos el circuito creado para la implementación de *P*.
   * Comprobamos que la regla metamórfica definida se verifica para los valores de entrada seleccionados.
 
