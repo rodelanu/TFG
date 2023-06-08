@@ -18,9 +18,13 @@ Repositorio común realizado por:
   * Consideramos una secuencia de test a elección (*x*<sub>1</sub>, ... ,*x*<sub>*n*</sub>) &rarr; (*P*(*x*<sub>1</sub>), ... ,*P*(*x*<sub>*n*</sub>)).
   * Si *R'* no se satisface con los valores obtenidos, se concluye que *P* no es una implementación válida de *f*.
 
+<br>
+
 A continuación, se presentan varias reglas metamórficas para la suma módulo *m*, con *m* cierto entero positivo.
 >  * *R*<sub>0</sub> :=  *x* +<sub>*m*</sub> 0 = *x*
 >  * *R*<sub>*s*</sub> :=  *x* +<sub>m</sub> *s*(*y*) = *s*(*x* <sub>*m*</sub> *y*), donde *s* denota el sucesor modular.
+
+<br>
 
 Para la implementación de las reglas que hemos definido, seguiremos el mismo esquema:
   * Se crea un programa *P* con el objetivo de computar el algoritmo cuántico correspondiente.
