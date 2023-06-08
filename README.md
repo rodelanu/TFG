@@ -73,7 +73,7 @@ El algoritmo de Bernstein-Vazirani busca la obtención de una cadena de bits *s*
 
 [3. Simon Rules](3_Simon_Rules.ipynb)
 
-El algoritmo de Simon busca encontrar una cadena *b* que caracteriza una función *f* : {0,1}<sup>n</sup> &rarr; {0,1} que es inyectiva o *dos a uno*, si para cada valor *y* del dominio imagen hay dos valores de entrada que evalúan a *y*, que siempre serán de la forma *x* y *x + b* (mod 2<sup>n</sup>), al considerar que ambas cadenas de bits se corresponden con valores de Z<sub>2<sup>n</sup></sub>. En el caso de que la función *f* sea inyectiva se tendrá que *b =* 0...0.
+El algoritmo de Simon busca encontrar una cadena *b* que caracteriza una función *f* : {0,1}<sup>n</sup> &rarr; {0,1}<sup>n</sup> que es inyectiva o *dos a uno*, si para cada valor *y* del dominio imagen hay dos valores de entrada que evalúan a *y*, que siempre serán de la forma *x* y *x + b* (mod 2<sup>n</sup>), al considerar que ambas cadenas de bits se corresponden con valores de Z<sub>2<sup>n</sup></sub>. En el caso de que la función *f* sea inyectiva se tendrá que *b =* 0...0.
 
 Este algoritmo encontrará las posibles cadenas *z* tales que *b***z* = 0 (mod 2), con las que se podrá hallar el valor de *b* mediante métodos de resolución de sistemas de ecuaciones lineales. 
 
