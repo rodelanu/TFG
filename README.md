@@ -59,7 +59,7 @@ El algoritmo de Bernstein-Vazirani busca la obtención de una cadena de bits *s*
   * Si *s'* es la cadena resultante de aplicar *X* (0 -> 1, 1 -> 0) bit a bit en *s*, entonces *P*(*f*<sub>*s+<sub>*b*</sub>s'*</sub>) = |1...1⟩. Este es un caso particular de la regla anterior y cualquier contraejemplo de esta regla servirá para la primera regla.
 
 
-  * Al aplicar en el algoritmo los oráculos de ambas funciones *f*<sub>*s*</sub> y *f*<sub>*s'*</sub> sucesivamente, se obtiene como resultado la suma bit a bit de las cadenas *s* y *s'* (i.e. *s* +<sub>*b*</sub> *s'*). 
+  * Al aplicar en el algoritmo los oráculos de ambas funciones *f*<sub>*s*</sub> y *f*<sub>*s'*</sub> sucesivamente, se obtiene como resultado la suma bit a bit de las cadenas *s* y *s'*, esto es la cadena *s* +<sub>*b*</sub> *s'*. 
 
 <br>
 
