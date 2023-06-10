@@ -7,6 +7,10 @@ Repositorio común realizado por:
 - Rodrigo de la Nuez Moraleda
 - Sinhué García Gil
 
+* `1_Deutsch_Jozsa_Rules.ipynb` &rarr; Algoritmo de Deutsch-Jozsa y sus reglas metamórficas
+* `2_Bernstein_Vazirani_Rules.ipynb` &rarr; Algoritmo de Bernstein-Vazirani y sus reglas metamórficas
+* `3_Simon_Rules.ipynb` &rarr; Algoritmo de Simon y sus reglas metamórficas
+
 <br>
 
 # Implementación de reglas metamórficas para comprobar la corrección de algoritmos cuánticos
@@ -33,9 +37,6 @@ Para la implementación de las reglas que hemos definido, seguiremos el mismo es
   * Consideramos ciertos valores de prueba y ejecutamos el circuito creado para la implementación de *P*.
   * Comprobamos que la regla metamórfica definida se verifica para los valores de entrada seleccionados.
 
-"""
-Esta comprobación se realizará manualmente o con ayuda de puertas añadidas tras el algoritmo. Si bien es cierto, que debido a intentar usar el menor número de qubits posibles para se probados en ordenadores cuánticos reales, la comprobación de los ejemplos propuestos a continuación se hará de forma manual (visual)? (Obs: Ya que realmente comprobamos nosotros que da lo debe dar, no sé si habría otra forma mejor de ponerlo, lo dejo así por ahora).
-"""
 
 <br>
 
