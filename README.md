@@ -7,6 +7,7 @@ Repositorio común realizado por:
 - Rodrigo de la Nuez Moraleda
 - Sinhué García Gil
 
+Se ha utilizado la librería `qiskit` para la creación del siguiente código de programación cuántica:
 * `1_Deutsch_Jozsa_Rules.ipynb` &rarr; Algoritmo de Deutsch-Jozsa y sus reglas metamórficas
 * `2_Bernstein_Vazirani_Rules.ipynb` &rarr; Algoritmo de Bernstein-Vazirani y sus reglas metamórficas
 * `3_Simon_Rules.ipynb` &rarr; Algoritmo de Simon y sus reglas metamórficas
