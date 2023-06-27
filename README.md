@@ -62,7 +62,7 @@ Si *P* es el programa que implementa el algoritmo de Deutsch-Jozsa interpretamos
 
 [2. Bernstein-Vazirani Rules](2_Bernstein_Vazirani_Rules.ipynb)
 
-El algoritmo de Bernstein-Vazirani busca la obtención de una cadena de bits *s* que caracteriza una función de caja negra *f<sub>*s*</sub>* = *s* * *x* (mod 2). Sea *P* el programa que implementa este algoritmo y devuelve *s*, si usamos +<sub>*b*</sub> para denotar la suma bit a bit de dos cadenas, se tienen las siguientes reglas metamórficas:
+El algoritmo de Bernstein-Vazirani busca la obtención de una cadena de bits *s* que caracteriza una función de caja negra *f<sub>*s*</sub>* = *s* * *x* (mod 2). Sea *P* el programa que implementa este algoritmo y devuelve *s*, si usamos +<sub>*b*</sub> para denotar la suma (módulo 2) bit a bit de dos cadenas, se tienen las siguientes reglas metamórficas:
 
   * Si *s'* es la cadena resultante de aplicar *X* (0  &rarr;  1, 1  &rarr;  0) bit a bit en *s*, entonces *P*(*f*<sub>*s +<sub>*b*</sub> s'*</sub>) = |1...1⟩.
 
