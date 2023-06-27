@@ -51,7 +51,7 @@ El algoritmo de Deutsch-Jozsa busca clasificar una función de caja negra *f* : 
 
 Este algoritmo devolverá la cadena de bits nula 0...0 si y sólo si *f* es constante (suponiendo que cumpla las condiciones del enunciado: si no es constante es equilibrada). De esta forma, puede entenderse el resultado del algoritmo como un valor binario (por ejemplo, tomando el máximo valor de la cadena de bits medida).
 
-Si *P* es el programa que implementa el algoritmo de Deutsch-Josza interpretamos que si *f* es constante (*P* &rarr; 0) y si es equilibrada (*P* &rarr; 1), entonces se tienen las siguientes reglas metamórficas:
+Si *P* es el programa que implementa el algoritmo de Deutsch-Jozsa interpretamos que si *f* es constante (*P* &rarr; 0) y si es equilibrada (*P* &rarr; 1), entonces se tienen las siguientes reglas metamórficas:
 
   * Sean *g* un automorfismo de {0,1}<sup>n</sup> y *f* una función como la del enunciado, se cumple que *P(f) = P(f o g)*.
   * Dada *f* : {0,1}<sup>n</sup> &rarr; {0,1} una función constante o equilibrada, siempre se verifica que *P(f) = P(1 - f)*.
