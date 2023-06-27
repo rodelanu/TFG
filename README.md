@@ -31,7 +31,7 @@ Se ha utilizado la librería `qiskit` para la creación del siguiente código de
 
 A continuación, se presentan varias reglas metamórficas para la suma módulo *m*, con *m* cierto entero positivo.
 >  * *R*<sub>0</sub> :=  *x* +<sub>*m*</sub> 0 = *x*
->  * *R*<sub>*s*</sub> :=  *x* +<sub>m</sub> *s*(*y*) = *s*(*x* <sub>*m*</sub> *y*), donde *s* denota el sucesor modular.
+>  * *R*<sub>*s*</sub> :=  *x* +<sub>m</sub> *s*(*y*) = *s*(*x* +<sub>*m*</sub> *y*), donde *s* denota el sucesor modular.
 
 <br>
 
