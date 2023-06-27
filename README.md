@@ -37,7 +37,7 @@ A continuación, se presentan varias reglas metamórficas para la suma módulo *
 
 Para la implementación de las reglas que hemos definido, seguiremos el mismo esquema:
   * Se crea un programa *P* con el objetivo de computar el algoritmo cuántico correspondiente.
-  * Consideramos ciertos valores de prueba y ejecutamos el circuito creado para la implementación de *P*.
+  * Consideramos ciertos valores de prueba y ejecutamos el circuito creado para la implementación *P*.
   * Comprobamos que la regla metamórfica definida se verifica para los valores de entrada seleccionados.
 
 
