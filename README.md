@@ -82,6 +82,6 @@ Este algoritmo encontrará todas las posibles cadenas *z* tales que *b* * *z* = 
 
 Dada una implementación correcta de este algoritmo se tendrán las siguientes reglas metamórficas:
 
-  * Al efectuar la suma bit a bit sobre el estado cuántico que comprende todos los posibles resultados *z* del programa, se obtiene de nuevo el conjunto inicial de soluciones.
+  * Al efectuar la suma bit a bit sobre el estado cuántico que comprende todos los posibles resultados *z* del programa consigo mismo, se obtiene de nuevo el conjunto inicial de soluciones.
   
   * Aplicar la implementación del algoritmo con cierta cadena de bits *b* e invertir las soluciones obtenidas, tiene el mismo efecto que aplicar el programa asociado a la cadena *b* invertida.
