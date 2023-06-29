@@ -18,7 +18,7 @@ Se ha utilizado la librería `qiskit` para la creación del siguiente código de
 
 # Implementación de reglas metamórficas para comprobar la corrección de algoritmos cuánticos
 
-**Definición.** Sea *f* una función objetivo o algoritmo, diremos que *R* es una ***regla metamórfica*** si es una relación entre varios valores de entrada y/o salida, y que se puede deducir de forma lógica a partir del procedimiento el algoritmo. Esto quiere decir que *R* siempre será una propiedad necesaria de la función *f*.
+**Definición.** Sea *f* una función objetivo o algoritmo, diremos que *R* es una ***regla metamórfica*** si es una relación entre varios valores de entrada y/o salida, y que se puede deducir de forma lógica a partir del procedimiento del algoritmo. Esto quiere decir que *R* siempre será una propiedad necesaria de la función *f*.
 
 <br>
 
