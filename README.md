@@ -80,7 +80,7 @@ El algoritmo de Simon busca encontrar una cadena *b* que caracteriza una funció
 
 Este algoritmo encontrará todas las posibles cadenas *z* tales que *b* * *z* = 0 (mod 2), con las que se podrá hallar el valor de la cadena *b* a partir del sistema de ecuaciones asociado.
 
-Dada una implementación correcta de este algoritmo se cumplirán las siguientes reglas metamórficas:
+Dada una implementación correcta de este algoritmo se cumplirán las siguientes relaciones metamórficas:
 
   * Al efectuar la suma bit a bit sobre el estado cuántico que comprende todos los posibles resultados *z* del programa consigo mismo, se obtiene de nuevo el conjunto inicial de soluciones (con las mismas probabilidades).
   
